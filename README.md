@@ -81,7 +81,6 @@ Example response:
       "post_date": "Dec 9, 2024, 6:11:38 AM",
       "replies": 162
     },
-    // ... more threads
   ]
 }
 ```
@@ -103,10 +102,7 @@ Returns the API's current status.
 
 The API currently monitors these official PoE forums:
 
-- Important Announcements (`/forum/view-forum/2212`)
-- Game Announcements (`/forum/view-forum/3`)
-- Development Manifestos (`/forum/view-forum/366`)
-- Technical News (`/forum/view-forum/54`)
+- Patch Notes Announcements (`/forum/view-forum/2212`)
 
 ## Error Handling
 
@@ -122,7 +118,7 @@ The API includes comprehensive error handling:
 
 ```
 poe-forum-api/
-├── main.py           # Main application file
+├── poe2_api.py       # Main application file
 ├── requirements.txt  # Project dependencies
 └── README.md        # Documentation
 ```
@@ -131,7 +127,7 @@ poe-forum-api/
 
 To add more forum sections:
 
-1. Open `main.py`
+1. Open `poe2_api.py`
 2. Find the `forums` list in the `get_forum_threads` function
 3. Add new forum URLs to the list
 
